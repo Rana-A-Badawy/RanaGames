@@ -1,0 +1,143 @@
+/************************** general start ***********************/
+
+:root {
+  --bg-color: #daeef1;
+  --text-color: #000000;
+  --card-bg: #f8f9fa;
+}
+
+body {
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/************************** general end *************************/
+/************************** navbar start ************************/
+
+.navbar{ 
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #b8dcde;
+    color: #000000;
+}
+
+/*************************** navbar end *************************/
+/************************* Game Cards start *********************/
+
+.gamesCards {
+ margin: 6%;
+}
+
+.gamesCards .card{
+    background-color: #89c4c46c;
+    border-radius: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.btn-primary {
+  background-color: #7f5af0;
+  border: none;
+  border-radius: 50px;
+}
+
+.btn-primary:hover {
+  background-color: #5d3fd3;
+}
+
+/************************* Game Cards end ***********************/
+/**************** start footer ****************/
+.custom-footer {
+  background-color: #b8dcde;
+  color: #333;
+  padding: 30px 15px;
+  margin-top: 50px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.custom-footer .footer-content {
+  text-align: center;
+}
+
+.custom-footer .footer-content h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.custom-footer .footer-content p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.custom-footer .footer-content a {
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.custom-footer .footer-content a:hover {
+  text-decoration: underline;
+}
+
+.custom-footer .designer {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.custom-footer i {
+  margin-right: 6px;
+  color: #444;
+}
+
+@media (max-width: 600px) {
+  .custom-footer {
+    font-size: 14px;
+  }
+}
+/************** end footer ***************/
+/**************start Dark mode ************/
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e2f;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .card {
+  background-color: #1e1e2f;
+  color: var(--text-color);
+}
+
+ body.dark .navbar{
+    background-color: #1e1e2f;
+    color: #f5f7fa;
+}
+
+ body.dark .navbar a{
+   color: #f5f7fa;
+ }
+
+ body.dark .navbar a i{
+   color: #f0e8e8;
+ }
+
+ body.dark .custom-footer{
+  background-color: #1e1e2f;
+  color: #aaa;
+ }
+ /*****************end dark mode***************/
+
